@@ -20,10 +20,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run!
-        run: | 
-          echo ${{ matrix.speed }}
-          sudo apapsapskaps 
+        run: |
           sleep 10
+          "erro para mim"
   after:
     runs-on: ubuntu-latest
     needs: build
