@@ -20,7 +20,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run!
-        run: echo ${{ matrix.speed }} 
+        run: | 
+          echo ${{ matrix.speed }} 
+          sleep 10
   after:
     runs-on: ubuntu-latest
     steps:
