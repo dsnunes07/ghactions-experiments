@@ -22,6 +22,7 @@ jobs:
       - name: Run!
         run: sleep ${{ speed }} 
   after:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: 'After!'
